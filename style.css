@@ -112,3 +112,21 @@ ul li span:hover{
     background-color: #176B87;
     transform: rotate(90deg);
 }
+
+@media screen and (max-width: 500px) {
+    .main-box{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+    }
+    .input-box{
+        margin: auto;
+
+    }
+    .input-text{
+        width: 80%;
+    }
+    
+}
