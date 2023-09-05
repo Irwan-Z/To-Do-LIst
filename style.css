@@ -1,0 +1,114 @@
+*{
+    font-family: arial;
+}
+
+html,.container{
+    background-image: linear-gradient(120deg,#053B50,#176B87);
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-box{
+    text-align: center;
+    background-color: #053B50;
+    width: 300px;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 6px 16px 20px 12px rgba(0,0,0,.5);
+}
+.main-box h1{
+    color: #64CCC5;
+    text-shadow: 2px 2px 10px #176B87;
+}
+
+.input-box{
+    display: flex;
+    justify-content: space-between;
+    background-color: #eaeaea;
+    margin: 20px 10%;
+    border-radius: 20px;
+    padding: 0px;
+}
+
+.input-text{
+    border: none;
+    margin-right: 0px;
+    background-color: transparent;
+    outline: none;
+    padding-left: 1em;
+}
+
+
+.btn{
+    border: none;
+    background-color: #64CCC5;
+    color: #053B50;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px;
+    transition: all .2s ease-in-out;
+}
+.btn:hover{
+    color: #64CCC5;
+    background-color: #053B50;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 6px rgba(182, 182, 182, 0.637);
+}
+
+.list{
+    text-align: start;
+
+}
+
+ul li{
+    padding: 10px;
+    list-style: none;
+    user-select: none;
+    position: relative;
+    padding-left: 40px;
+    color: #64CCC5;
+}
+/* buat gambar */
+ul li::before{
+    content: '';
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 5px;
+    left: 0px;
+    position: absolute;
+}
+
+ul li.checked{
+    color: #5e5e5e;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    top: 0px;
+    right: 55px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #64CCC5;
+    border-radius: 50%;
+    transition: 0.3s ease-out;
+}
+ul li span:hover{
+    background-color: #176B87;
+    transform: rotate(90deg);
+}
