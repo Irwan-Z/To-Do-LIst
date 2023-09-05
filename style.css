@@ -121,6 +121,8 @@ ul li span:hover{
         display: flex;
         flex-wrap: wrap;
         width: 40%;
+        margin-right: auto;
+        margin-left: auto;
     }
     .input-box{
         margin: auto;
